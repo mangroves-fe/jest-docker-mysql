@@ -1,0 +1,35 @@
+{
+  "name": "@mangroves/jest-docker-mysql",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "rimraf lib && rollup -c --configPlugin typescript"
+  },
+  "keywords": [],
+  "author": "mangroves-fe",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.3.5"
+  }
+}

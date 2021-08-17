@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "allowJs": false,
+    "strict": true
+  },
+  "include": ["src"]
+}
