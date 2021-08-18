@@ -5,7 +5,14 @@ import { IUserDefinedConfig } from '../interfaces/user-defined-config'
 
 const CONFIG_FILE_NAME = 'jest-docker-mysql-config.js'
 
-const userDefinedConfig = require(path.resolve(process.cwd(), CONFIG_FILE_NAME))
+let userDefinedConfig = {}
+
+try {
+  userDefinedConfig = require(path.resolve(process.cwd(), CONFIG_FILE_NAME))
+} catch (err) {
+  // No-op
+}
+
 const finalConfig: IUserDefinedConfig = merge({}, userDefinedConfig, DEFAULT_CONFIG)
 
 export default finalConfig

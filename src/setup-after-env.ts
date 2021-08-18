@@ -1,9 +1,11 @@
 import fs from 'fs/promises'
 import path from 'path'
-import { createConnection } from 'mysql2/promise'
+import { Connection, createConnection } from 'mysql2/promise'
 
 import config from './helpers/get-config'
 import { throwError } from './helpers/logger'
+
+let __JEST_DOCKER_MYSQL_CONNECTION__: Connection
 
 const connectDB = async () => {
   const {

@@ -16,11 +16,6 @@ const globalTeardown = async (): Promise<void> => {
     // Stop and remove docker container
     await stopAndRemoveContainer()
   }
-
-  const connection = __JEST_DOCKER_MYSQL_CONNECTION__
-  if (connection) {
-    connection.destroy()
-  }
 }
 
 export default globalTeardown
