@@ -33,6 +33,7 @@
     "@typescript-eslint/space-before-function-paren": ["warn", "always"],
     "@typescript-eslint/comma-spacing": ["warn", { "before": false, "after": true }],
     "@typescript-eslint/space-infix-ops": ["warn", { "int32Hint": false }],
-    "@typescript-eslint/type-annotation-spacing": ["warn", { "overrides": { "colon": { "before": false, "after": true }, "arrow": { "before": true, "after": true } } }]
+    "@typescript-eslint/type-annotation-spacing": ["warn", { "overrides": { "colon": { "before": false, "after": true }, "arrow": { "before": true, "after": true } } }],
+    "@typescript-eslint/no-var-requires": "off"
   }
 }
