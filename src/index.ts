@@ -1,5 +1,5 @@
-export * as globalSetup from './global-setup'
-export * as globalTeardown from './global-teardown'
+export { default as globalSetup } from './global-setup'
+export { default as globalTeardown } from './global-teardown'
 
-export * from './helpers/define-config'
-export * as config from './helpers/get-config'
+export { default as defineConfig } from './helpers/define-config'
+export { default as config } from './helpers/get-config'
