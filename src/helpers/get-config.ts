@@ -13,6 +13,6 @@ try {
   // No-op
 }
 
-const finalConfig: IUserDefinedConfig = merge({}, userDefinedConfig, DEFAULT_CONFIG)
+const finalConfig: IUserDefinedConfig = merge({}, DEFAULT_CONFIG, userDefinedConfig)
 
 export default finalConfig
