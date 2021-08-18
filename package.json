@@ -1,13 +1,27 @@
 {
   "name": "@mangroves/jest-docker-mysql",
   "version": "0.1.0",
-  "description": "",
+  "description": "Jest preset to run MySQL in docker",
   "main": "lib/index.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "rimraf lib && tsc -p tsconfig.json"
+    "build": "rimraf lib && tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "files": [
+    "lib",
+    "index.d.ts",
+    "jest-preset.js"
+  ],
+  "keywords": [
+    "jest",
+    "mysql",
+    "docker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mangroves-fe/jest-docker-mysql"
+  },
   "author": "mangroves-fe",
   "license": "MIT",
   "husky": {
