@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "rimraf lib && rollup -c --configPlugin typescript"
+    "build": "rimraf lib && tsc -p tsconfig.json"
   },
   "keywords": [],
   "author": "mangroves-fe",
@@ -18,9 +18,6 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "@rollup/plugin-commonjs": "^20.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.4",
-    "@rollup/plugin-typescript": "^8.2.5",
     "@types/jest": "^27.0.1",
     "@types/lodash.merge": "^4.6.6",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
@@ -29,7 +26,6 @@
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "rimraf": "^3.0.2",
-    "rollup": "^2.56.2",
     "typescript": "^4.3.5"
   },
   "dependencies": {
