@@ -1,3 +1,3 @@
 # jest-docker-mysql
 
-A mangroves-fe project.
+Jest preset to run MySQL in docker

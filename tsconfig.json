@@ -5,7 +5,10 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "allowJs": false,
-    "strict": true
+    "strict": true,
+    "target": "es6",
+    "module": "CommonJS",
+    "moduleResolution": "node"
   },
   "include": ["src"]
 }

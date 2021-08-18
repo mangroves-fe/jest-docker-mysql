@@ -6,8 +6,9 @@ import { nodeResolve } from '@rollup/plugin-node-resolve'
 export default defineConfig({
   input: [
     'src/index.ts',
-    'src/setup.ts',
-    'src/teardown.ts',
+    'src/global-setup.ts',
+    'src/global-teardown.ts',
+    'src/setup-after-env.ts',
   ],
   output: {
     dir: 'lib',
