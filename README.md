@@ -91,7 +91,7 @@ Example:
 
 ```javascript
 // xxx.spec.js
-import { config } from '@mangroves/jest-docker-mysql'
+import { config } from '@mangroves/jest-docker-mysql/config'
 
 describe('Your test case', () => {
   let connection
