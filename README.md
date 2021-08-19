@@ -72,7 +72,7 @@ In your setup script:
 
 ```javascript
 // path/to/your/script-setup.js
-import { globalSetup } from '@mangroves/jest-docker-mysql'
+import { globalSetup } from '@mangroves/jest-docker-mysql/lib/global-setup.js'
 
 const yourSetup = async () => {
   await globalSetup()
